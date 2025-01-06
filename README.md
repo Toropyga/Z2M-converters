@@ -3,7 +3,7 @@ Zigbee2MQTT converters for my devices.
 
 ![ZigBee2MQTT](https://img.shields.io/badge/ZigBee2MQTT-v2.0.0-yellow.svg)
 
-- **DIYRuZ_Zintercom** - [Zintercom](https://github.com/Toropyga/Z2M-converters/blob/main/converters/DIYRuZ_Zintercom_1.35.js) - Intercom converter. My modification. [Espdomofon](https://espdomofon.ru/category/diy/).
+- **DIYRuZ Zintercom** - [Zintercom](https://github.com/Toropyga/Z2M-converters/blob/main/converters/DIYRuZ_Zintercom_1.35.js) - Intercom converter. My modification. [Espdomofon](https://espdomofon.ru/category/diy/).
 - **EFEKTA iAQ2 R2** - [EFEKTA iAQ2 R2](https://github.com/Toropyga/Z2M-converters/blob/main/converters/EFEKTA_iAQ2_R2.js) - EFEKTA iAQ2 R2 converter. My modification. [EFEKTA iAQ](https://github.com/smartboxchannel/EFEKTA_iAQ/tree/main/converter).
 - **EFEKTA iAQ S III R4** - [EFEKTA iAQ S III R4](https://github.com/Toropyga/Z2M-converters/blob/main/converters/EFEKTA_iAQ_S_III_R4.js) - EFEKTA iAQ S III R4 converter. My modification. [EFEKTA iAQ](https://github.com/smartboxchannel/EFEKTA_iAQ/tree/main/converter).
 - **zFlora ProMax R4** - [zFlora ProMax R4](https://github.com/Toropyga/Z2M-converters/blob/main/converters/zFlora_ProMax_R4.js) - zFlora ProMax R4 converter. My modification. [EFEKTA zFlora](https://github.com/smartboxchannel/EFEKTA-zFlora/tree/main/Z2M_Converter).
