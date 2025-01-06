@@ -2,7 +2,6 @@ const fz = require('zigbee-herdsman-converters/converters/fromZigbee');
 const tz = require('zigbee-herdsman-converters/converters/toZigbee');
 const exposes = require('zigbee-herdsman-converters/lib/exposes');
 const reporting = require('zigbee-herdsman-converters/lib/reporting');
-const extend = require('zigbee-herdsman-converters/lib/extend');
 const constants = require('zigbee-herdsman-converters/lib/constants');
 const e = exposes.presets;
 const ea = exposes.access;
@@ -259,7 +258,7 @@ const definition = {
                 'genTime', 'msTemperatureMeasurement', 'msRelativeHumidity', 'msCO2']);
 		    await reporting.bind(endpoint2, coordinatorEndpoint, ['msIlluminanceMeasurement', 'msPressureMeasurement']);
         },
-        exposes: [e.co2(), e.temperature(), e.humidity(), e.illuminance_lux(), e.illuminance(), e.pressure(),
+        exposes: [e.co2(), e.temperature(), e.humidity(), e.illuminance(), e.pressure(),
             exposes.binary('auto_brightness', ea.STATE_SET, 'ON', 'OFF')
 			    .withDescription('Enable or Disable Auto Brightness of the Display'),
 		    exposes.binary('onoff_brightness', ea.STATE_SET, 'ON', 'OFF')
