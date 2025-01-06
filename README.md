@@ -8,7 +8,8 @@ Zigbee2MQTT converters for my devices.
 - **EFEKTA iAQ S III R4** - [EFEKTA iAQ S III R4](https://github.com/Toropyga/Z2M-converters/blob/main/converters/EFEKTA_iAQ_S_III_R4.js) - EFEKTA iAQ S III R4 converter. My modification. [EFEKTA iAQ](https://github.com/smartboxchannel/EFEKTA_iAQ/tree/main/converter).
 - **zFlora ProMax R4** - [zFlora ProMax R4](https://github.com/Toropyga/Z2M-converters/blob/main/converters/zFlora_ProMax_R4.js) - zFlora ProMax R4 converter. My modification. [EFEKTA zFlora](https://github.com/smartboxchannel/EFEKTA-zFlora/tree/main/Z2M_Converter).
 - **PTVO LED Informer** - [PTVO LED Informer](https://github.com/Toropyga/Z2M-converters/blob/main/converters/ptvo_led_inform_1.35.js) - PTVO LED Informer converter.  My modification. [Modkam](https://modkam.ru/2022/09/12/vizualnyj-zigbee-informer-v-korpuse-gx53/).\
-~~OLD **Perenio door sensor** - [Perenio door sensor](https://github.com/Toropyga/Z2M-converters/blob/main/converters/perenio.js) - Perenio Door and Window Sensor. My old converter. There is no more need.~~
+\
+~~**Perenio door sensor** - [Perenio door sensor](https://github.com/Toropyga/Z2M-converters/blob/main/converters/perenio.js) - Perenio Door and Window Sensor. My old converter. There is no more need.~~
 
 
 **External converters and extensions** ([Full readme is here](https://github.com/Koenkk/zigbee2mqtt/discussions/24198))
