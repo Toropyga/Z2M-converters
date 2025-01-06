@@ -9,3 +9,9 @@ Zigbee2MQTT converters for my devices.
 - **zFlora ProMax R4** - [zFlora ProMax R4](https://github.com/Toropyga/Z2M-converters/blob/main/converters/zFlora_ProMax_R4.js) - zFlora ProMax R4 converter. My modification. (https://github.com/smartboxchannel/EFEKTA-zFlora/tree/main/Z2M_Converter).
 - **PTVO LED Informer** - [PTVO LED Informer](https://github.com/Toropyga/Z2M-converters/blob/main/converters/ptvo_led_inform_1.35.js) - PTVO LED Informer converter.  My modification. (https://modkam.ru/2022/09/12/vizualnyj-zigbee-informer-v-korpuse-gx53/).
 - **Perenio door sensor** - [Perenio door sensor](https://github.com/Toropyga/Z2M-converters/blob/main/converters/perenio.js) - Perenio Door and Window Sensor. My old converter.
+
+
+**External converters and extensions** ([Full readme is here](https://github.com/Koenkk/zigbee2mqtt/discussions/24198))
+
+- The external_converters setting is no longer used. Instead all external converters inside data/external_converters directory are now automatically loaded. Make sure to move all your external converters to this directory.
+- External extensions are now loaded from data/external_extensions instead of data/extension. Make sure to rename your data/extension directory (if present) to data/external_extensions.
