@@ -109,6 +109,34 @@ const fzLocal = {
 			}
         },
     },
+    illuminance: {
+        cluster: 'msIlluminanceMeasurement',
+        type: ['attributeReport', 'readResponse'],
+        convert: (model, msg, publish, options, meta) => {
+            const result = {};
+            if (msg.data.hasOwnProperty('measuredValue')) {
+                const illuminance_raw = msg.data['measuredValue'];
+                const illuminance = illuminance_raw === 0 ? 0 : Math.pow(10, (illuminance_raw - 1) / 10000);
+                result.illuminance = illuminance;
+                result.illuminance_raw = illuminance_raw;
+                }
+            return result;
+        },
+    },
+    illuminance: {
+        cluster: 'msIlluminanceMeasurement',
+        type: ['attributeReport', 'readResponse'],
+        convert: (model, msg, publish, options, meta) => {
+            const result = {};
+            if (msg.data.hasOwnProperty('measuredValue')) {
+                const illuminance_raw = msg.data['measuredValue'];
+                const illuminance = illuminance_raw === 0 ? 0 : Math.pow(10, (illuminance_raw - 1) / 10000);
+                result.illuminance = illuminance;
+                result.illuminance_raw = illuminance_raw;
+                }
+            return result;
+        },
+    },
 };
 
 const definition = {
@@ -116,7 +144,7 @@ const definition = {
         model: 'zFlora_ProMax',
         vendor: 'Custom devices (DiY)',
         description: '[Plant watering sensor zFlora_ProMax with signal amplifier](http://efektalab.com/PWS_Max)',
-        fromZigbee: [fz.temperature, fz.humidity, fz.illuminance, fz.soil_moisture, fz.battery, fzLocal.node_config, fzLocal.temperaturef_config, fzLocal.node_debug, fzLocal.uptime],
+        fromZigbee: [fz.temperature, fz.humidity, fzLocal.illuminance, fz.soil_moisture, fz.battery, fzLocal.node_config, fzLocal.temperaturef_config, fzLocal.node_debug, fzLocal.uptime],
         toZigbee: [tz.factory_reset, tzLocal.node_config, tzLocal.temperaturef_config, tzLocal.node_debug],
         configure: async (device, coordinatorEndpoint, logger) => {
             const firstEndpoint = device.getEndpoint(1);

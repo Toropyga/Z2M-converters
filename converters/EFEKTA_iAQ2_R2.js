@@ -240,6 +240,20 @@ const fzLocal = {
             return result;
         },
     },
+    illuminance: {
+        cluster: 'msIlluminanceMeasurement',
+        type: ['attributeReport', 'readResponse'],
+        convert: (model, msg, publish, options, meta) => {
+            const result = {};
+            if (msg.data.hasOwnProperty('measuredValue')) {
+                const illuminance_raw = msg.data['measuredValue'];
+                const illuminance = illuminance_raw === 0 ? 0 : Math.pow(10, (illuminance_raw - 1) / 10000);
+                result.illuminance = illuminance;
+                result.illuminance_raw = illuminance_raw;
+                }
+            return result;
+        },
+    },
 };
 
 const definition = {
@@ -247,7 +261,7 @@ const definition = {
         model: 'EFEKTA_iAQ2',
         vendor: 'Custom devices (DiY)',
         description: '[CO2 Monitor with IPS TFT Display, outdoor temperature and humidity, date and time.](http://efektalab.com/iAQ)',
-        fromZigbee: [fz.temperature, fz.humidity, fz.illuminance, fz.pressure, fzLocal.co2, fzLocal.co2_config,
+        fromZigbee: [fz.temperature, fz.humidity, fzLocal.illuminance, fz.pressure, fzLocal.co2, fzLocal.co2_config,
             fzLocal.temperaturef_config, fzLocal.humidity_config, fzLocal.local_time, fzLocal.co2_gasstat_config],
         toZigbee: [tz.factory_reset, tzLocal.co2_config, tzLocal.temperaturef_config, tzLocal.humidity_config, tzLocal.co2_gasstat_config],
 		onEvent: onEventSetLocalTime,
