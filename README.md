@@ -1,7 +1,7 @@
 # Z2M-converters 
 Zigbee2MQTT converters for my devices.
 
-![ZigBee2MQTT](https://img.shields.io/badge/ZigBee2MQTT-v2.0.0-yellow.svg)
+![ZigBee2MQTT](https://img.shields.io/badge/ZigBee2MQTT-v2.14.3-yellow.svg)
 
 - **DIYRuZ Zintercom** - [Zintercom](https://github.com/Toropyga/Z2M-converters/blob/main/converters/DIYRuZ_Zintercom_1.35.js) - Intercom converter. My modification. [Espdomofon](https://espdomofon.ru/category/diy/).
 - **EFEKTA iAQ2 R2** - [EFEKTA iAQ2 R2](https://github.com/Toropyga/Z2M-converters/blob/main/converters/EFEKTA_iAQ2_R2.js) - EFEKTA iAQ2 R2 converter. My modification. [EFEKTA iAQ](https://github.com/smartboxchannel/EFEKTA_iAQ/tree/main/converter).
