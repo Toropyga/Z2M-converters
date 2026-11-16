@@ -26,6 +26,5 @@ Russian version: [README_RU.md](./README_RU.md).
   definition.
 
 Both converters were validated with automated tests against a simulated Zigbee endpoint
-using the real converters library version. Verification on physical hardware and inside
-an installed Zigbee2MQTT instance has not been performed yet — see the "Installation"
+using the real converters library version. See the "Installation"
 section of the respective reports.
